@@ -1,6 +1,6 @@
 import streamlit as st
 
-def main():
+def set_page_style():
     st.set_page_config(page_title="SQL Assistant", page_icon="🤖", layout="wide")
     st.markdown("""
         <style>
@@ -26,10 +26,10 @@ def main():
         </style>
     """, unsafe_allow_html=True)
 
-    # Title Section
-    st.markdown("<p class='title'>SQL Assistant 🤖</p>", unsafe_allow_html=True)
-    st.markdown("<p class='subtitle'> SQL 생성, 수정, 최적화를 도와줍니다.</p>", unsafe_allow_html=True)
-
+def main():
+    set_page_style()
+    st.markdown("<p class='title'>HCS SQL Assistant 🤖</p>", unsafe_allow_html=True)
+    st.markdown("<p class='subtitle'>SQL 생성, 수정, 최적화를 도와줍니다.</p>", unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
